@@ -125,7 +125,7 @@ main{
 
 .educacion{
     grid-area: educacion;
-    margin: 5%;
+    margin: 2%;
     text-align:start;
     text-wrap: wrap;
 }
