@@ -1,0 +1,162 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.contenedor{
+    background-color: rgb(248 245 241);
+    display: grid;
+    grid-template-areas:
+        "nav-menu nav-menu"
+        "nav-form nav-form"
+        "main header"
+        "main experiencia"
+        "educacion distinciones"
+        "footer footer"
+    ;
+    gap: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.nav-menu {
+    grid-area: nav-menu;
+    background-color:rgb(19, 19, 92);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-form{
+    grid-area: nav-form;
+    margin: 0 auto;
+
+}
+
+#contactForm {
+    display:grid;
+    justify-items: start;
+    margin-bottom: 10px;
+}
+#contactForm input, textarea{
+    width: 35em;
+}
+#contactForm button{
+
+    background-color: #6e8f8f;
+    border-bottom: solid;
+    box-sizing: border-box;
+    size: 200px;
+
+}
+
+.error {
+    color: red;
+}
+.success {
+    color: green;
+}
+
+
+
+
+header{
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+main{
+    grid-area: main;
+    background-color: rgb(194 192 192);
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    margin: 5%;
+    
+}
+
+.myPhoto{
+    display: grid;
+}
+
+#myPhoto{
+    max-width: 100%;
+    height: auto;
+    border-radius: 180px;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.aboutMe{
+    text-align: justify;
+    padding: 5% 0% 5% 0%;
+}
+
+.myContact ul{
+    list-style: none;
+    padding-left: 1%;
+    font-size: small;
+    text-wrap: wrap;
+}
+
+.myContact ul li{
+    padding: 1%;
+}
+
+.experiencia{
+    grid-area: experiencia;
+    margin: 5%;
+    text-align: start;
+    text-wrap: wrap;
+    padding-right: 5%;
+}
+
+.experiencia ul li{
+    list-style: none;
+    font-size: small;
+}
+
+.educacion{
+    grid-area: educacion;
+    margin: 5%;
+    text-align:start;
+    text-wrap: wrap;
+}
+.educacion ul li{
+    font-size: small;
+}
+
+.distinciones{
+    grid-area: distinciones;
+    text-align: start;
+    text-wrap: wrap;
+}
+.distinciones ul li{
+    font-size: small;
+}
+
+footer{ 
+    height: min-content;
+    grid-area: footer;
+    background-color: rgb(19, 19, 92);
+    color: gainsboro;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+    font-size: xx-small;
+}
+
+
+.texto{
+    padding-left: 10%;
+    text-align: center;
+    font-size: xx-small;
+}
